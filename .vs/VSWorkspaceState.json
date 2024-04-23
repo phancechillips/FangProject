@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AB_game",
+    "\\AB_game\\AB_game"
   ],
-  "SelectedNode": "\\C:\\Users\\chanc\\Source\\Repos\\FangProjectRepo",
+  "SelectedNode": "\\AB_game\\AB_game\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

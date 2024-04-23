@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AB_game
 {
-    public partial class Form1 : Form
+    public partial class WelcForm : Form
     {
-        public Form1()
+        public WelcForm()
         {
             InitializeComponent();
         }

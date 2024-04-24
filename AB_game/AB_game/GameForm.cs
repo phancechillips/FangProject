@@ -12,9 +12,16 @@ namespace AB_game
 {
     public partial class GameForm : Form
     {
+
+        private string secretNumber;
+
         public GameForm()
         {
             InitializeComponent();
+            if (codemakerToolStripMenuItem.Checked )
+            {
+                InitializeCodemakerMode();
+            }
         }
 
         private void welcomeScreenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,7 +38,8 @@ namespace AB_game
 
         private void codemakerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InitializeCodemakerMode();
+            codemakerToolStripMenuItem.Checked = true;
+            codebreakerToolStripMenuItem.Checked = false;
         }
         private void InitializeCodemakerMode()
         {
@@ -42,8 +50,10 @@ namespace AB_game
             // codemakerControls.Visible = true;
 
             // Example: Generate secret number
-            string secretNumber = GenerateSecretNumber();
-            MessageBox.Show($"Secret Number: {secretNumber}", "Codemaker Mode");
+            if (codemakerToolStripMenuItem.Checked)
+            {
+                string secretNumber = GenerateSecretNumber();
+            }
         }
         private string GenerateSecretNumber()
         {
@@ -63,13 +73,35 @@ namespace AB_game
             }
 
             // Convert digits to string
-            string secretNumber = string.Join("", digits);
+            secretNumber = string.Join("", digits);
             return secretNumber;
+        }
+
+        public string EvaluateGuess(string guess)
+        {
+            int aCount = 0;
+            int bCount = 0;
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (guess[i] == secretNumber[i])
+                {
+                    aCount++;
+                }
+                else if (secretNumber.Contains(guess[i]))
+                {
+                    bCount++;
+                }
+            }
+
+            return $"{aCount}A{bCount}B";
         }
 
         private void codebreakerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InitializeCodebreakerMode();
+            codebreakerToolStripMenuItem.Checked = true;
+            codemakerToolStripMenuItem.Checked = false;
         }
         private void InitializeCodebreakerMode()
         {
@@ -82,5 +114,23 @@ namespace AB_game
             // Example: Clear any previous guesses
             // ClearPreviousGuesses();
         }
+
+        private void submitButton_Click(object sender, EventArgs e)
+        {
+            string userGuess = txtGuess.Text.Trim();
+
+            if (userGuess.Length != 4 || !userGuess.All(char.IsDigit))
+            {
+                MessageBox.Show("Please enter a valid four-digit number with no repeated digits.");
+                return;
+            }
+
+            string hint = EvaluateGuess(userGuess);
+            lstGuesses.Items.Add($"{userGuess} - {hint}");
+
+            txtGuess.Clear(); // Clear the textbox for the next guess
+            txtGuess.Focus(); // Set focus back to the textbox
+        }
+
     }
 }

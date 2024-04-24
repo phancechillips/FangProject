@@ -36,12 +36,14 @@
             this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.welcomeScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scoreLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.userGuess = new System.Windows.Forms.TextBox();
+            this.txtGuess = new System.Windows.Forms.TextBox();
             this.userGuessLabel = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.resetGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.submitButton = new System.Windows.Forms.Button();
+            this.lstGuesses = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -72,14 +74,14 @@
             this.codemakerToolStripMenuItem.Checked = true;
             this.codemakerToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.codemakerToolStripMenuItem.Name = "codemakerToolStripMenuItem";
-            this.codemakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.codemakerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.codemakerToolStripMenuItem.Text = "Codemaker";
             this.codemakerToolStripMenuItem.Click += new System.EventHandler(this.codemakerToolStripMenuItem_Click);
             // 
             // codebreakerToolStripMenuItem
             // 
             this.codebreakerToolStripMenuItem.Name = "codebreakerToolStripMenuItem";
-            this.codebreakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.codebreakerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.codebreakerToolStripMenuItem.Text = "Codebreaker";
             this.codebreakerToolStripMenuItem.Click += new System.EventHandler(this.codebreakerToolStripMenuItem_Click);
             // 
@@ -106,12 +108,12 @@
             this.scoreLogToolStripMenuItem.Text = "Score Log";
             this.scoreLogToolStripMenuItem.Click += new System.EventHandler(this.scoreLogToolStripMenuItem_Click);
             // 
-            // userGuess
+            // txtGuess
             // 
-            this.userGuess.Location = new System.Drawing.Point(15, 60);
-            this.userGuess.Name = "userGuess";
-            this.userGuess.Size = new System.Drawing.Size(100, 20);
-            this.userGuess.TabIndex = 1;
+            this.txtGuess.Location = new System.Drawing.Point(15, 60);
+            this.txtGuess.Name = "txtGuess";
+            this.txtGuess.Size = new System.Drawing.Size(100, 20);
+            this.txtGuess.TabIndex = 1;
             // 
             // userGuessLabel
             // 
@@ -150,14 +152,34 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
+            // submitButton
+            // 
+            this.submitButton.Location = new System.Drawing.Point(137, 56);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(67, 26);
+            this.submitButton.TabIndex = 4;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
+            // 
+            // lstGuesses
+            // 
+            this.lstGuesses.FormattingEnabled = true;
+            this.lstGuesses.Location = new System.Drawing.Point(73, 99);
+            this.lstGuesses.Name = "lstGuesses";
+            this.lstGuesses.Size = new System.Drawing.Size(131, 134);
+            this.lstGuesses.TabIndex = 5;
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstGuesses);
+            this.Controls.Add(this.submitButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.userGuessLabel);
-            this.Controls.Add(this.userGuess);
+            this.Controls.Add(this.txtGuess);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "GameForm";
@@ -177,7 +199,7 @@
         private System.Windows.Forms.ToolStripMenuItem gameModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem codemakerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem codebreakerToolStripMenuItem;
-        private System.Windows.Forms.TextBox userGuess;
+        private System.Windows.Forms.TextBox txtGuess;
         private System.Windows.Forms.Label userGuessLabel;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -186,5 +208,7 @@
         private System.Windows.Forms.ToolStripMenuItem otherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem welcomeScreenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scoreLogToolStripMenuItem;
+        private System.Windows.Forms.Button submitButton;
+        private System.Windows.Forms.ListBox lstGuesses;
     }
 }

@@ -44,6 +44,14 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.submitButton = new System.Windows.Forms.Button();
             this.lstGuesses = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCurrentGuess = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtFeedback = new System.Windows.Forms.TextBox();
+            this.btnSubmitFeedback = new System.Windows.Forms.Button();
+            this.lstGuessHistory = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -110,7 +118,7 @@
             // 
             // txtGuess
             // 
-            this.txtGuess.Location = new System.Drawing.Point(15, 60);
+            this.txtGuess.Location = new System.Drawing.Point(99, 139);
             this.txtGuess.Name = "txtGuess";
             this.txtGuess.Size = new System.Drawing.Size(100, 20);
             this.txtGuess.TabIndex = 1;
@@ -118,7 +126,7 @@
             // userGuessLabel
             // 
             this.userGuessLabel.AutoSize = true;
-            this.userGuessLabel.Location = new System.Drawing.Point(12, 44);
+            this.userGuessLabel.Location = new System.Drawing.Point(96, 123);
             this.userGuessLabel.Name = "userGuessLabel";
             this.userGuessLabel.Size = new System.Drawing.Size(92, 13);
             this.userGuessLabel.TabIndex = 2;
@@ -127,7 +135,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 134);
+            this.dataGridView1.Location = new System.Drawing.Point(99, 319);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(8, 8);
             this.dataGridView1.TabIndex = 3;
@@ -154,7 +162,7 @@
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(137, 56);
+            this.submitButton.Location = new System.Drawing.Point(205, 133);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(67, 26);
             this.submitButton.TabIndex = 4;
@@ -165,16 +173,95 @@
             // lstGuesses
             // 
             this.lstGuesses.FormattingEnabled = true;
-            this.lstGuesses.Location = new System.Drawing.Point(73, 99);
+            this.lstGuesses.Location = new System.Drawing.Point(99, 165);
             this.lstGuesses.Name = "lstGuesses";
             this.lstGuesses.Size = new System.Drawing.Size(131, 134);
             this.lstGuesses.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(99, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Codemaker";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(417, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Codebreaker";
+            // 
+            // txtCurrentGuess
+            // 
+            this.txtCurrentGuess.Location = new System.Drawing.Point(421, 137);
+            this.txtCurrentGuess.Name = "txtCurrentGuess";
+            this.txtCurrentGuess.Size = new System.Drawing.Size(100, 20);
+            this.txtCurrentGuess.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(418, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Current guess: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(418, 175);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Feedback Input:";
+            // 
+            // txtFeedback
+            // 
+            this.txtFeedback.Location = new System.Drawing.Point(421, 191);
+            this.txtFeedback.Name = "txtFeedback";
+            this.txtFeedback.Size = new System.Drawing.Size(100, 20);
+            this.txtFeedback.TabIndex = 11;
+            // 
+            // btnSubmitFeedback
+            // 
+            this.btnSubmitFeedback.Location = new System.Drawing.Point(536, 189);
+            this.btnSubmitFeedback.Name = "btnSubmitFeedback";
+            this.btnSubmitFeedback.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmitFeedback.TabIndex = 12;
+            this.btnSubmitFeedback.Text = "Submit";
+            this.btnSubmitFeedback.UseVisualStyleBackColor = true;
+            this.btnSubmitFeedback.Click += new System.EventHandler(this.btnSubmitFeedback_Click);
+            // 
+            // lstGuessHistory
+            // 
+            this.lstGuessHistory.FormattingEnabled = true;
+            this.lstGuessHistory.Location = new System.Drawing.Point(421, 218);
+            this.lstGuessHistory.Name = "lstGuessHistory";
+            this.lstGuessHistory.Size = new System.Drawing.Size(120, 134);
+            this.lstGuessHistory.TabIndex = 13;
             // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lstGuessHistory);
+            this.Controls.Add(this.btnSubmitFeedback);
+            this.Controls.Add(this.txtFeedback);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtCurrentGuess);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lstGuesses);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.dataGridView1);
@@ -210,5 +297,13 @@
         private System.Windows.Forms.ToolStripMenuItem scoreLogToolStripMenuItem;
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.ListBox lstGuesses;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtCurrentGuess;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtFeedback;
+        private System.Windows.Forms.Button btnSubmitFeedback;
+        private System.Windows.Forms.ListBox lstGuessHistory;
     }
 }

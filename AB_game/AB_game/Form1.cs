@@ -16,5 +16,11 @@ namespace AB_game
         {
             InitializeComponent();
         }
+
+        private void playToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GameForm gameForm = new GameForm();
+            gameForm.Show();
+        }
     }
 }

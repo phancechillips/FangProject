@@ -16,5 +16,17 @@ namespace AB_game
         {
             InitializeComponent();
         }
+
+        private void welcomeScreenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            
+        }
+
+        private void scoreLogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ScoreForm scoreForm = new ScoreForm();
+            scoreForm.Show();
+        }
     }
 }

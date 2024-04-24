@@ -9,3 +9,4 @@ C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\
 C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\AB_game\AB_game\obj\Debug\AB_game.csproj.CoreCompileInputs.cache
 C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\AB_game\AB_game\obj\Debug\AB_game.exe
 C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\AB_game\AB_game\obj\Debug\AB_game.pdb
+C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\AB_game\AB_game\obj\Debug\AB_game.ScoreForm.resources

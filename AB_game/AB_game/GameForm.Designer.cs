@@ -33,6 +33,9 @@
             this.gameModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.codemakerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.codebreakerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.welcomeScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scoreLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userGuess = new System.Windows.Forms.TextBox();
             this.userGuessLabel = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -47,7 +50,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gameModeToolStripMenuItem});
+            this.gameModeToolStripMenuItem,
+            this.otherToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -66,14 +70,37 @@
             // codemakerToolStripMenuItem
             // 
             this.codemakerToolStripMenuItem.Name = "codemakerToolStripMenuItem";
-            this.codemakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.codemakerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.codemakerToolStripMenuItem.Text = "Codemaker";
             // 
             // codebreakerToolStripMenuItem
             // 
             this.codebreakerToolStripMenuItem.Name = "codebreakerToolStripMenuItem";
-            this.codebreakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.codebreakerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.codebreakerToolStripMenuItem.Text = "Codebreaker";
+            // 
+            // otherToolStripMenuItem
+            // 
+            this.otherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.welcomeScreenToolStripMenuItem,
+            this.scoreLogToolStripMenuItem});
+            this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
+            this.otherToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.otherToolStripMenuItem.Text = "Other";
+            // 
+            // welcomeScreenToolStripMenuItem
+            // 
+            this.welcomeScreenToolStripMenuItem.Name = "welcomeScreenToolStripMenuItem";
+            this.welcomeScreenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.welcomeScreenToolStripMenuItem.Text = "Welcome Screen";
+            this.welcomeScreenToolStripMenuItem.Click += new System.EventHandler(this.welcomeScreenToolStripMenuItem_Click);
+            // 
+            // scoreLogToolStripMenuItem
+            // 
+            this.scoreLogToolStripMenuItem.Name = "scoreLogToolStripMenuItem";
+            this.scoreLogToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.scoreLogToolStripMenuItem.Text = "Score Log";
+            this.scoreLogToolStripMenuItem.Click += new System.EventHandler(this.scoreLogToolStripMenuItem_Click);
             // 
             // userGuess
             // 
@@ -105,18 +132,18 @@
             this.resetGameToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(137, 48);
             // 
             // resetGameToolStripMenuItem
             // 
             this.resetGameToolStripMenuItem.Name = "resetGameToolStripMenuItem";
-            this.resetGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.resetGameToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.resetGameToolStripMenuItem.Text = "Reset Game";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // GameForm
@@ -152,5 +179,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem resetGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem otherToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem welcomeScreenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scoreLogToolStripMenuItem;
     }
 }

@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Nicco\\.nuget\\packages\\": {}
+    "C:\\Users\\chanc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\GameLogic.csproj",
+      "projectUniqueName": "C:\\Users\\chanc\\Source\\Repos\\FangProject\\AB_game\\GameLogic\\GameLogic.csproj",
       "projectName": "GameLogic",
-      "projectPath": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\GameLogic.csproj",
-      "packagesPath": "C:\\Users\\Nicco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\obj\\",
+      "projectPath": "C:\\Users\\chanc\\Source\\Repos\\FangProject\\AB_game\\GameLogic\\GameLogic.csproj",
+      "packagesPath": "C:\\Users\\chanc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chanc\\Source\\Repos\\FangProject\\AB_game\\GameLogic\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Nicco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,7 +33,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://gallery.uipath.com/api/v3/index.json": {},
+        "https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
@@ -61,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

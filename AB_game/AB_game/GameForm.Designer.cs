@@ -74,12 +74,14 @@
             this.codemakerToolStripMenuItem.Name = "codemakerToolStripMenuItem";
             this.codemakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.codemakerToolStripMenuItem.Text = "Codemaker";
+            this.codemakerToolStripMenuItem.Click += new System.EventHandler(this.codemakerToolStripMenuItem_Click);
             // 
             // codebreakerToolStripMenuItem
             // 
             this.codebreakerToolStripMenuItem.Name = "codebreakerToolStripMenuItem";
-            this.codebreakerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.codebreakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.codebreakerToolStripMenuItem.Text = "Codebreaker";
+            this.codebreakerToolStripMenuItem.Click += new System.EventHandler(this.codebreakerToolStripMenuItem_Click);
             // 
             // otherToolStripMenuItem
             // 
@@ -93,14 +95,14 @@
             // welcomeScreenToolStripMenuItem
             // 
             this.welcomeScreenToolStripMenuItem.Name = "welcomeScreenToolStripMenuItem";
-            this.welcomeScreenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.welcomeScreenToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.welcomeScreenToolStripMenuItem.Text = "Welcome Screen";
             this.welcomeScreenToolStripMenuItem.Click += new System.EventHandler(this.welcomeScreenToolStripMenuItem_Click);
             // 
             // scoreLogToolStripMenuItem
             // 
             this.scoreLogToolStripMenuItem.Name = "scoreLogToolStripMenuItem";
-            this.scoreLogToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.scoreLogToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.scoreLogToolStripMenuItem.Text = "Score Log";
             this.scoreLogToolStripMenuItem.Click += new System.EventHandler(this.scoreLogToolStripMenuItem_Click);
             // 

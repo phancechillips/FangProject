@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameLogic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f335993ffa8947ee507b3e9f54fab52ffd3e4f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0a5ce541d58b6da72ca333597940086a2a85b16")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameLogic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameLogic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

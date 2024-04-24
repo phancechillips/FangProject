@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\GameLogic.vbproj",
+      "projectUniqueName": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\GameLogic.csproj",
       "projectName": "GameLogic",
-      "projectPath": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\GameLogic.vbproj",
+      "projectPath": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\GameLogic.csproj",
       "packagesPath": "C:\\Users\\Nicco\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\obj\\",
       "projectStyle": "PackageReference",

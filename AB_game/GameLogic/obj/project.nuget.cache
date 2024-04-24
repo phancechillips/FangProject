@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kkgHDWzwXOauzCm9jcxbIn1O8VhRlV/Wk2IHcMA1OT+2nZa3SJFmLga5tsZ63fVH0NuWDtHUENf4lbyCA5dkZQ==",
+  "dgSpecHash": "ydhOpRtzmWaV3TN+zVVtLo6v21de7x7X/XzQa5qxf9Rsvviv9gMO09M77vhIi+cCJ64jnWPqzrGFGi2c0P9EeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\GameLogic.vbproj",
+  "projectFilePath": "C:\\Users\\Nicco\\Documents\\School\\System Integration and Architecture\\FangProject\\AB_game\\GameLogic\\GameLogic.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

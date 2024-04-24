@@ -69,8 +69,10 @@
             // 
             // codemakerToolStripMenuItem
             // 
+            this.codemakerToolStripMenuItem.Checked = true;
+            this.codemakerToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.codemakerToolStripMenuItem.Name = "codemakerToolStripMenuItem";
-            this.codemakerToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.codemakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.codemakerToolStripMenuItem.Text = "Codemaker";
             // 
             // codebreakerToolStripMenuItem

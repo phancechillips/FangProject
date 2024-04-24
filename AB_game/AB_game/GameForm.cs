@@ -18,7 +18,7 @@ namespace AB_game
         public GameForm()
         {
             InitializeComponent();
-            if (codemakerToolStripMenuItem.Checked )
+            if (codemakerToolStripMenuItem.Checked)
             {
                 InitializeCodemakerMode();
             }

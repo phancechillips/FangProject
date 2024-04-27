@@ -10,3 +10,15 @@ C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\
 C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\AB_game\AB_game\obj\Debug\AB_game.exe
 C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\AB_game\AB_game\obj\Debug\AB_game.pdb
 C:\Users\Nicco\Documents\School\System Integration and Architecture\FangProject\AB_game\AB_game\obj\Debug\AB_game.ScoreForm.resources
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\bin\Debug\AB_game.exe.config
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\bin\Debug\AB_game.exe
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\bin\Debug\AB_game.pdb
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.csproj.AssemblyReference.cache
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.WelcForm.resources
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.GameForm.resources
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.Properties.Resources.resources
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.ScoreForm.resources
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.csproj.GenerateResource.cache
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.csproj.CoreCompileInputs.cache
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.exe
+C:\Users\chanc\source\repos\FangProject\phancechillips\FangProject\AB_game\AB_game\obj\Debug\AB_game.pdb

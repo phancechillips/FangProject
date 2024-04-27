@@ -120,11 +120,24 @@ namespace AB_game
         private void InitializeCodemakerMode()
         {
             // Example: Hide controls related to codebreaker mode
-            // codebreakerControls.Visible = false;
+            label2.Visible = false;
+            label6.Visible = false;
+            textBox2.Visible = false;
+            label3.Visible = false;
+            txtCurrentGuess.Visible = false;
+            label4.Visible = false;
+            txtFeedback.Visible = false;
+            btnSubmitFeedback.Visible = false;
+            lstGuessHistory.Visible = false;
 
             // Example: Show controls related to codemaker mode
-            // codemakerControls.Visible = true;
-
+            label1.Visible = true;
+            label5.Visible = true;
+            textBox1.Visible = true;
+            userGuessLabel.Visible = true;
+            txtGuess.Visible = true;
+            submitButton.Visible = true;
+            lstGuesses.Visible = true;
             // Example: Generate secret number
             if (codemakerToolStripMenuItem.Checked)
             {
@@ -132,6 +145,7 @@ namespace AB_game
                 InitializePossibleNumbers();
             }
         }
+        
         private string GenerateSecretNumber()
         {
             Random random = new Random();
@@ -182,6 +196,25 @@ namespace AB_game
         }
         private void InitializeCodebreakerMode()
         {
+            // Example: Hide controls related to codebreaker mode
+            label2.Visible = true;
+            label6.Visible = true;
+            textBox2.Visible = true;
+            label3.Visible = true;
+            txtCurrentGuess.Visible = true;
+            label4.Visible = true;
+            txtFeedback.Visible = true;
+            btnSubmitFeedback.Visible = true;
+            lstGuessHistory.Visible = true;
+
+            // Example: Show controls related to codemaker mode
+            label1.Visible = false;
+            label5.Visible = false;
+            textBox1.Visible = false;
+            userGuessLabel.Visible = false;
+            txtGuess.Visible = false;
+            submitButton.Visible = false;
+            lstGuesses.Visible = false;
             StartNewGame();
         }
 
@@ -227,6 +260,11 @@ namespace AB_game
 
             txtCurrentGuess.Text = currentGuess;
             txtFeedback.Clear();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

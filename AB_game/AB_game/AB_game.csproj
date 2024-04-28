@@ -97,5 +97,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CIS3433\CIS3433.csproj">
+      <Project>{9ec56960-a959-43fe-8510-5dd7c696f49d}</Project>
+      <Name>CIS3433</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

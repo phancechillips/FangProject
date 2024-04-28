@@ -13,7 +13,8 @@ namespace AB_game
 {
     public partial class GameForm : Form
     {
-
+        private ABGame abGame;
+        private GameLogger gameLogger;
         private string secretNumber;
         private List<string> possibleNumbers;
         private string currentGuess;
@@ -22,6 +23,8 @@ namespace AB_game
         {
             InitializeComponent();
             UpdateGameMode();
+            abGame = new ABGame(); // Instantiate ABGame class
+            gameLogger = new GameLogger(); // Instantiate GameLogger class
         }
 
         private void UpdateGameMode()
@@ -35,7 +38,6 @@ namespace AB_game
                 InitializeCodebreakerMode();
             }
         }
-
 
         private void InitializePossibleNumbers()
         {
@@ -54,18 +56,12 @@ namespace AB_game
         {
             return possibleNumbers[0]; // Return the first possibility
         }
-        private void StartNewGame()
-        {
-            currentGuess = MakeInitialGuess();
-            txtCurrentGuess.Text = currentGuess;
-            lstGuessHistory.Items.Clear();
-        }
 
         public string ProcessFeedbackAndMakeNextGuess(string currentGuess, string feedback)
         {
+            // Ensure that possibleNumbers is initialized if it's found to be null.
             if (possibleNumbers == null)
             {
-                // Ensure that possibleNumbers is initialized if it's found to be null.
                 InitializePossibleNumbers();
             }
 
@@ -73,7 +69,6 @@ namespace AB_game
             possibleNumbers = possibleNumbers.Where(num => MatchFeedback(num, currentGuess, feedback)).ToList();
             return possibleNumbers.FirstOrDefault(); // This will be null if no possibilities remain
         }
-
 
         private bool MatchFeedback(string candidate, string guess, string feedback)
         {
@@ -98,11 +93,9 @@ namespace AB_game
             return Regex.IsMatch(feedback, @"^[0-4]A[0-4]B$");
         }
 
-
         private void welcomeScreenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
         }
 
         private void scoreLogToolStripMenuItem_Click(object sender, EventArgs e)
@@ -117,9 +110,9 @@ namespace AB_game
             codebreakerToolStripMenuItem.Checked = false;
             UpdateGameMode();
         }
+
         private void InitializeCodemakerMode()
         {
-            // Example: Hide controls related to codebreaker mode
             label2.Visible = false;
             label6.Visible = false;
             textBox2.Visible = false;
@@ -130,7 +123,6 @@ namespace AB_game
             btnSubmitFeedback.Visible = false;
             lstGuessHistory.Visible = false;
 
-            // Example: Show controls related to codemaker mode
             label1.Visible = true;
             label5.Visible = true;
             textBox1.Visible = true;
@@ -138,14 +130,13 @@ namespace AB_game
             txtGuess.Visible = true;
             submitButton.Visible = true;
             lstGuesses.Visible = true;
-            // Example: Generate secret number
             if (codemakerToolStripMenuItem.Checked)
             {
                 string secretNumber = GenerateSecretNumber();
                 InitializePossibleNumbers();
             }
         }
-        
+
         private string GenerateSecretNumber()
         {
             Random random = new Random();
@@ -194,9 +185,10 @@ namespace AB_game
             codemakerToolStripMenuItem.Checked = false;
             UpdateGameMode();
         }
+
         private void InitializeCodebreakerMode()
         {
-            // Example: Hide controls related to codebreaker mode
+            
             label2.Visible = true;
             label6.Visible = true;
             textBox2.Visible = true;
@@ -207,7 +199,7 @@ namespace AB_game
             btnSubmitFeedback.Visible = true;
             lstGuessHistory.Visible = true;
 
-            // Example: Show controls related to codemaker mode
+            
             label1.Visible = false;
             label5.Visible = false;
             textBox1.Visible = false;
@@ -215,7 +207,7 @@ namespace AB_game
             txtGuess.Visible = false;
             submitButton.Visible = false;
             lstGuesses.Visible = false;
-            StartNewGame();
+            
         }
 
         private void submitButton_Click(object sender, EventArgs e)
@@ -233,11 +225,6 @@ namespace AB_game
 
             txtGuess.Clear(); // Clear the textbox for the next guess
             txtGuess.Focus(); // Set focus back to the textbox
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSubmitFeedback_Click(object sender, EventArgs e)
@@ -262,9 +249,14 @@ namespace AB_game
             txtFeedback.Clear();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            // Your label1 click event handler code here
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
-
+            // Your label2 click event handler code here
         }
     }
 }

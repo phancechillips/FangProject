@@ -1,0 +1,12 @@
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\bin\Debug\net8.0\CIS3433.deps.json
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\bin\Debug\net8.0\CIS3433.dll
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\bin\Debug\net8.0\CIS3433.pdb
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\CIS3433.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\CIS3433.AssemblyInfoInputs.cache
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\CIS3433.AssemblyInfo.cs
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\CIS3433.csproj.CoreCompileInputs.cache
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\CIS3433.sourcelink.json
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\CIS3433.dll
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\refint\CIS3433.dll
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\CIS3433.pdb
+C:\Users\chanc\source\repos\FANGPROJ\AB_game\CIS3433\obj\Debug\net8.0\ref\CIS3433.dll

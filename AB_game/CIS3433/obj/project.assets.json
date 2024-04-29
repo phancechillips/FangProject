@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chanc\\source\\repos\\FangProject\\phancechillips\\FangProject\\AB_game\\CIS3433\\CIS3433.csproj",
+      "projectUniqueName": "C:\\Users\\chanc\\source\\repos\\FANGPROJ\\AB_game\\CIS3433\\CIS3433.csproj",
       "projectName": "CIS3433",
-      "projectPath": "C:\\Users\\chanc\\source\\repos\\FangProject\\phancechillips\\FangProject\\AB_game\\CIS3433\\CIS3433.csproj",
+      "projectPath": "C:\\Users\\chanc\\source\\repos\\FANGPROJ\\AB_game\\CIS3433\\CIS3433.csproj",
       "packagesPath": "C:\\Users\\chanc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chanc\\source\\repos\\FangProject\\phancechillips\\FangProject\\AB_game\\CIS3433\\obj\\",
+      "outputPath": "C:\\Users\\chanc\\source\\repos\\FANGPROJ\\AB_game\\CIS3433\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

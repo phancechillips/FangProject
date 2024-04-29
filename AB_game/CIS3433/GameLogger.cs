@@ -14,7 +14,7 @@ namespace CIS3433
             string databasePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ABGameDatabase.mdf");
 
             // Set the connection string using the database file path
-            connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={databasePath};Integrated Security=True";
+            connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=\FANGPROJ\AB_game\MSSQLLocalDB;Integrated Security=True";
         }
 
         public void LogGameInfo(string playerName, string gameMode, DateTime playDate, int totalTries, int totalSeconds, string secretNumber, string[] guesses, string[] hints, int gameScore)
